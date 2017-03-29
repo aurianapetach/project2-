@@ -8,8 +8,74 @@
 // Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif: 'Josefin Sans',-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$font-family-serif:      Georgia, "Times New Roman", Times, serif;
+$font-family-serif:      'Space Mono',Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:       $font-family-sans-serif;
+$font-family-cursive: 	'lobster', cursive;
+$font-size-h1: 3rem;
 
-$font-weight-bold: 700;
+// Colors
+	$gray-dark: #444;
+	$purple: #4e1f52; 
+	$red:    #d9534f;
+	$blue:   #6fccdd;
+	$lightblue: lighten($blue, 30%);
+	$white:  #fff;
+	$black:  #000;
+	$green: #72bf44;
+	$pink: #e25e5e;
+	$lightpink: lighten($pink, 5%);
+
+// nav
+	$navbarcolor: $lightpink;
+
+// buttons
+	$btn-primary-color: $white;
+	$btn-primary-bg: $purple;
+
+	$border-radius: 24px;
+
+
+// headings
+	$headings-color: $black;
+	$headings-font-family:   $font-family-cursive;
+
+// jumbotron
+	$jumbotron-bg:  $blue;
+
+// cards
+	$card-bg:        $blue;
+	$card-cap-bg:	$lightblue;
+
+
+	$body-color:    $gray-dark;
+
+.navbar p {
+	color: $white;
+	font-family: $font-family-cursive; 
+}
+
+.jumbotron h1 {
+	color: $white;
+	text-shadow: 2px 2px 4px $black; 
+}
+
+.green {
+	background-color: $green;
+}
+
+.blue {
+	background-color: $blue;
+}
+
+h5 {
+	font-family: $font-family-sans-serif;
+}
+
+footer {
+	text-align: center;
+	height: 50px;
+	background-color: $blue;
+	margin-top:40px;
+}
+

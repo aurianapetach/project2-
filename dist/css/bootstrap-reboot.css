@@ -1,3 +1,32 @@
+.navbar p {
+  color: #fff;
+  font-family: "lobster", cursive;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.green {
+  background-color: #72bf44;
+}
+
+.blue {
+  background-color: #6fccdd;
+}
+
+h5 {
+  font-family: "Josefin Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+  background-color: #6fccdd;
+  margin-top: 40px;
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -268,7 +297,7 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #292b2c;
+  color: #444;
   background-color: #fff;
 }
 

@@ -5,10 +5,11 @@
 .card {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-resize;
   background-color: $card-bg;
-  border: $card-border-width solid $card-border-color;
   @include border-radius($card-border-radius);
+  box-shadow: 3px 3px 5px $gray-light;
+  margin-right: 20px;
 }
 
 .card-block {
@@ -64,7 +65,7 @@
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
   background-color: $card-cap-bg;
-  border-bottom: $card-border-width solid $card-border-color;
+  // border-bottom: $card-border-width solid $card-border-color;
 
   &:first-child {
     @include border-radius($card-border-radius-inner $card-border-radius-inner 0 0);

@@ -1,8 +1,10 @@
 .jumbotron {
   padding: $jumbotron-padding ($jumbotron-padding / 2);
   margin-bottom: $jumbotron-padding;
-  background-color: $jumbotron-bg;
+  // background-color: $jumbotron-bg;
   @include border-radius($border-radius-lg);
+  // background-image: url(../images/whitehouse.jpg);
+  // background-size: cover;
 
   @include media-breakpoint-up(sm) {
     padding: ($jumbotron-padding * 2) $jumbotron-padding;
@@ -18,3 +20,4 @@
   padding-left: 0;
   @include border-radius(0);
 }
+

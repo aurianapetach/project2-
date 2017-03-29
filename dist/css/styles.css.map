@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA;CACC,oDAAmD;EAClD,mCAAsB;UAAtB,sBAAsB;CAEvB,cAAc;;CAEd","file":"styles.css","sourcesContent":[".jumbotron {\n\tbackground-image: url(../../images/background.png);\n  background-size: 100%;\n\n}\n\n.wrapper {\n\t\tbackground-image: url(../../images/background.png);\n  background-size: 100%;\n\n\n}"]}
