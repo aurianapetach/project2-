@@ -10,10 +10,6 @@ else {
 	$searchaddress_final = '18111%20Nordhoff%20St.%20Northridge%20CA'; 
 }
 
-// function rand_color() {
-//     return sprintf('#%06X', mt_rand(0, 0xFFFFFF));
-// }
-// <body style="background-color: <?php echo rand_color();
 
 ?>
 
@@ -34,26 +30,7 @@ else {
 
 </head>
 <body>
-<!-- navbar -->
-<!--    <div class="navbar-fixed-top navbar-inverse">
-      <div class="container-fluid">
-        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-          <!THIS IS WHAT YOUR ICON WILL BE -->
-        <!--   MENU
-        </button> --> 
 
-        <!-- start of nav text -->
-<!--         <div class="collapse navbar-collapse navHeaderCollapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#education">education</a></li>
-            <li><a href="#photos">photos</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div> -->
 	<nav class="navbar">
 		<div class="navbar-brand">
 			<p> findmyREPS</p>
@@ -103,7 +80,6 @@ else {
 			// setup count
 			$i = 0;
 
-// style="background-image: url(../images/background3.png)" background-repeat: no-repeat; background-size: 100%;>'
 	echo '<div class="container-fluid main">';
 	echo '<div id="results" class="container card-section">';
 	echo '<div class="row">';
@@ -113,13 +89,11 @@ else {
 				echo '<div class="col-lg-3 col-md-4 col-sm-12">';			
 				echo '<div class="card" style="width: 100%">';	
 				echo '<div class="card-block">';
-				// echo '<button data-toggle="collapse" data-target="#info">'.$person->name.'</button>';
 				echo '<div class="card-header">';
 				echo '<h3>'.$person->name.'</h3>';
 				echo '</div>';
 				echo '<h6>'.$jobs[$i].'</h6>';
 				echo '<img src="'.(isset($person->photoUrl)? $person->photoUrl : '../images/placeholder2.png').'" alt="'.$person->name.'" class="img-fluid">';
-				// echo '<div id="info" class="collapse">';
 				echo '<p> Party:'.(isset($person->party)? $person->party :'Not Listed').'</p>';
 				echo '<ul class="list-group">';
 				echo '<li class="list-group-item">'.(isset($person->phones[0])? $person->phones[0] :'Not Listed').'</li>';
@@ -137,7 +111,6 @@ else {
 				echo '</div>';
 				echo '</div>';
 				echo '</div>';
-				// echo '</div>';
 
 			// add 1 count to $i;
 			$i++;
@@ -156,26 +129,5 @@ else {
 	</footer>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
-  <script>
-  $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-  </script>
 </body>
 </html> 
